@@ -1,5 +1,3 @@
-import React from "react";
-import { useSelector, useDispatch } from "react-redux";
 import bookHead from "../assets/bookhubhead.jpg";
 import { useNavigate } from "react-router-dom";
 
@@ -17,7 +15,10 @@ const Landing = () => {
         <div className="flex flex-row gap-8 justify-center">
           <div className="flex flex-col p-8 gap-3 bg-gray-200 rounded-md">
             <div className="text-3xl text-pink-500">Share your books here:</div>
-            <button className="bg-purple-600 text-white p-2 rounded-md text-xl self-center">
+            <button
+              className="bg-purple-600 text-white p-2 rounded-md text-xl self-center"
+              onClick={() => navigate("/share")}
+            >
               Share
             </button>
           </div>

@@ -8,6 +8,7 @@ import NotFound from "../pages/NotFound";
 import UserLogin from "../pages/UserLogin";
 import UserRegister from "../pages/UserRegister";
 import Explore from "../pages/Explore";
+import Share from "../components/Share";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,7 @@ const router = createBrowserRouter([
       { path: "/about", element: <About /> },
       { path: "/contact", element: <Contact /> },
       { path: "/explore", element: <Explore /> },
+      { path: "/share", element: <Share /> },
     ],
   },
   {

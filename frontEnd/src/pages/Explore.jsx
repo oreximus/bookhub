@@ -31,10 +31,20 @@ const Explore = () => {
       ) : (
         booksData.map((data) => (
           <>
-            <div className="flex flex-row items-center gap-3 bg-gray-200 rounded-md p-3 my-4">
-              <img src={data.book_image} className="object-cover w-24 h-24" />
-              <div className="text-xl font-bold">{data.name}</div>
-              <div className="text-xl">{data.description}</div>
+            <div className="flex flex-row items-center gap-3 bg-gray-200 rounded-md p-3 my-4 justify-between">
+              <div className="flex flex-row gap-3 items-center">
+                <img src={data.book_image} className="object-cover w-24 h-24" />
+                <div className="text-xl font-bold">{data.name}</div>
+                <div className="text-xl">{data.description}</div>
+              </div>
+              <div className="flex flex-row gap-3 items-center">
+                <button className="bg-blue-600 text-white rounded-md p-2">
+                  add to cart
+                </button>
+                <button className="bg-gray-600 text-white rounded-md p-2">
+                  Borrow Now
+                </button>
+              </div>
             </div>
           </>
         ))
